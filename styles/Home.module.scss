@@ -10,7 +10,7 @@ $xxl: 1408px;
 .inner {
   color: #fff;
   width: 53%;
-  padding: 30vh 0 100vh 0;
+  padding: 30vh 0;
   margin: 0 auto;
   .section {
     height: 100vh;
@@ -64,20 +64,25 @@ $xxl: 1408px;
 @media screen and (max-width: $md) {
   .inner {
     width: 100%;
-    margin: 10px auto;
+    margin: auto;
     .section {
+      height: auto;
       flex-wrap: wrap;
       justify-content: center;
       text-align: center;
       flex-direction: column-reverse;
+      margin-bottom: 50px;
+    }
+    .firstView {
+      .sub {
+        font-size: 18px;
+        text-align: center;
+      }
     }
     .image {
       width: 130px;
       height: 130px;
       margin: 0 auto;
-    }
-    .sub {
-      font-size: 18px;
     }
   }
 }
