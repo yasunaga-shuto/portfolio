@@ -117,7 +117,7 @@ export default function Home() {
               </tbody>
             </table>
           </div>
-          <div className="mb-6">
+          <div>
             <h3 className={styles.sub}>OS・その他ツール</h3>
             <table className={`${styles.table} table is-fullwidth`}>
               <thead>
