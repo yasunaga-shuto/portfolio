@@ -8,12 +8,34 @@ $xxl: 1408px;
   padding: 0 2rem;
 }
 .inner {
+  color: #fff;
   width: 53%;
-  margin: 30vh auto;
+  padding: 30vh 0 100vh 0;
+  margin: 0 auto;
   .section {
+    height: 100vh;
+    .title {
+      font-weight: bold;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .sub {
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    h3.sub {
+      font-size: 23px;
+    }
+  }
+  .firstView {
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    .sub {
+      font-size: 20px;
+      text-align: left;
+    }
   }
   .image {
     border-radius: 50%;
@@ -21,23 +43,22 @@ $xxl: 1408px;
     width: 230px;
     height: 230px;
   }
-  .title {
-    font-size: 40px;
-    margin-bottom: 20px;
+  .introduction {
+    position: relative;
+    .sub {
+      text-align: center;
+      font-size: 30px;
+    }
+    .text {
+      font-size: 17px;
+      line-height: 2.3em;
+    }
   }
-  .sub {
-    font-size: 20px;
-  }
-}
-.introduction {
-  position: relative;
-  .sub {
-    text-align: center;
-    font-size: 30px;
-  }
-  .text {
-    font-size: 17px;
-    line-height: 2.3em;
+  .table {
+    background-color: rgba(0, 0, 0, 0);
+    & * {
+      color: #fff;
+    }
   }
 }
 @media screen and (max-width: $md) {
