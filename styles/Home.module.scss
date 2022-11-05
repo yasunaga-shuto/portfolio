@@ -66,6 +66,7 @@ $xxl: 1408px;
 }
 @media screen and (max-width: $md) {
   .inner {
+    padding-top: 15vh;
     width: 100%;
     margin: auto;
     .section {
