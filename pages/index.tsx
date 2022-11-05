@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
             </h1>
             <h2 className={styles.sub}>
               エンジニアリングで世の中を<br />
-              便利で楽しい世界へ
+              もっと便利で楽しい世界へ
             </h2>
           </div>
           <Image
