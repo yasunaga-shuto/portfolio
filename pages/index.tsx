@@ -45,6 +45,8 @@ export default function Home() {
     { name: "Asana", start: "2021-11-01", end: "current" },
     { name: "Jenkins", start: "2019-06-01", end: "2021-09-01" },
     { name: "Circle CI", start: "2021-11-01", end: "current" },
+    { name: "Elasticsearch", start: "2019-06-01", end: "2021-10-01" },
+    { name: "HTML,CSS/SCSS", start: "2018-09-01", end: "current" },
   ]
   const years = (skill: Skill) => {
     const start = moment(skill.start)
