@@ -12,6 +12,7 @@ export default function Home() {
   }
   const langs: Skill[] = [
     { name: "Ruby", start: "2018-09-01", end: "2021-10-01" },
+    { name: "Ruby on Rails", start: "2018-09-01", end: "2021-10-01" },
     { name: "Javascript", start: "2018-09-01", end: "current" },
     { name: "Shell", start: "2018-09-01", end: "current" },
     { name: "Vue.js", start: "2019-08-01", end: "current" },
@@ -23,7 +24,10 @@ export default function Home() {
     { name: "jQuery", start: "2018-09-01", end: "2019-04-01" },
   ]
   const infra: Skill[] = [
+    { name: "AWS", start: "2018-09-01", end: "2021-10-01" },
     { name: "Docker", start: "2019-09-01", end: "current" },
+    { name: "GCP", start: "2021-11-01", end: "current" },
+    { name: "GKE", start: "2021-11-01", end: "current" },
     { name: "Kubernetes", start: "2021-11-01", end: "current" },
     { name: "Helm", start: "2021-11-01", end: "current" },
     { name: "Terraform", start: "2020-04-01", end: "current" },
@@ -39,6 +43,8 @@ export default function Home() {
     { name: "GitLab", start: "2019-06-01", end: "2021-10-01" },
     { name: "GitHub", start: "2021-11-01", end: "current" },
     { name: "Asana", start: "2021-11-01", end: "current" },
+    { name: "Jenkins", start: "2019-06-01", end: "2021-09-01" },
+    { name: "Circle CI", start: "2021-11-01", end: "current" },
   ]
   const years = (skill: Skill) => {
     const start = moment(skill.start)
