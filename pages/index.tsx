@@ -73,6 +73,36 @@ export default function Home() {
               エンジニアリングで世の中を<br />
               もっと便利で楽しい世界へ
             </h2>
+            <div className={styles.links}>
+              <a href="https://twitter.com/shu_engineer" target="_blank" rel="noreferrer">
+                <Image
+                  src="/icons/twitter.png"
+                  alt="twitter"
+                  width={20}
+                  height={20}
+                  className={styles.icon}
+                />
+              </a>
+              <a href="https://www.wantedly.com/id/shuto_yasunaga" target="_blank" rel="noreferrer">
+                <Image
+                  src="/icons/wantedly.png"
+                  alt="wantedly"
+                  width={20}
+                  height={20}
+                  className={styles.icon}
+                />
+              </a>
+              <a href="https://qiita.com/s_yasunaga" target="_blank" rel="noreferrer">
+                <Image
+                  src="/icons/qiita.png"
+                  alt="qiita"
+                  width={20}
+                  height={20}
+                  className={styles.icon}
+                  style={{ filter: "brightness(0) invert(1)" }}
+                />
+              </a>
+            </div>
           </div>
           <Image
             className={styles.image}

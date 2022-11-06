@@ -19,3 +19,7 @@ body {
   color: white;
   background: #798DC5;
 }
+::selection {
+  color: #2b2e63;
+  background: rgba(255, 255, 255, 0.7);
+}

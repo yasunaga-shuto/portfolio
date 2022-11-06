@@ -38,6 +38,19 @@ $xxl: 1408px;
     .sub {
       font-size: 20px;
       text-align: left;
+      margin-bottom: 30px;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      a {
+        margin-right: 20px;
+        .icon {
+          object-fit: none;
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
   .image {
@@ -82,6 +95,9 @@ $xxl: 1408px;
       .sub {
         font-size: 18px;
         text-align: center;
+      }
+      .links {
+        justify-content: center;
       }
     }
     .image {
