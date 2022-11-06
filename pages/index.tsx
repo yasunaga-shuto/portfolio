@@ -74,7 +74,7 @@ export default function Home() {
           </div>
           <Image
             className={styles.image}
-            src="/image.jpeg"
+            src="/image.webp"
             alt="image"
             width={230}
             height={230}
