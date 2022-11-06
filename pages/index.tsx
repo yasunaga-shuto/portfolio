@@ -76,7 +76,7 @@ export default function Home() {
             <div className={styles.links}>
               <a href="https://twitter.com/shu_engineer" target="_blank" rel="noreferrer">
                 <Image
-                  src="/icons/twitter.png"
+                  src="/icons/twitter.webp"
                   alt="twitter"
                   width={20}
                   height={20}
@@ -85,7 +85,7 @@ export default function Home() {
               </a>
               <a href="https://www.wantedly.com/id/shuto_yasunaga" target="_blank" rel="noreferrer">
                 <Image
-                  src="/icons/wantedly.png"
+                  src="/icons/wantedly.webp"
                   alt="wantedly"
                   width={20}
                   height={20}
@@ -94,7 +94,7 @@ export default function Home() {
               </a>
               <a href="https://qiita.com/s_yasunaga" target="_blank" rel="noreferrer">
                 <Image
-                  src="/icons/qiita.png"
+                  src="/icons/qiita.webp"
                   alt="qiita"
                   width={20}
                   height={20}
