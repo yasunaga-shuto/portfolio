@@ -98,6 +98,9 @@ $xxl: 1408px;
       }
       .links {
         justify-content: center;
+        a:last-child {
+          margin-right: 0;
+        }
       }
     }
     .image {

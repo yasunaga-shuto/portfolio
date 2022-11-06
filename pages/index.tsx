@@ -81,6 +81,7 @@ export default function Home() {
                   width={20}
                   height={20}
                   className={styles.icon}
+                  priority={true}
                 />
               </a>
               <a href="https://www.wantedly.com/id/shuto_yasunaga" target="_blank" rel="noreferrer">
@@ -90,6 +91,7 @@ export default function Home() {
                   width={20}
                   height={20}
                   className={styles.icon}
+                  priority={true}
                 />
               </a>
               <a href="https://qiita.com/s_yasunaga" target="_blank" rel="noreferrer">
@@ -99,6 +101,7 @@ export default function Home() {
                   width={20}
                   height={20}
                   className={styles.icon}
+                  priority={true}
                   style={{ filter: "brightness(0) invert(1)" }}
                 />
               </a>
@@ -110,6 +113,7 @@ export default function Home() {
             alt="image"
             width={230}
             height={230}
+            priority={true}
           />
         </section>
         <section className={`${styles.introduction} ${styles.section}`}>
