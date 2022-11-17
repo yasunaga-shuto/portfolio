@@ -1,9 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
-import 'bulma/css/bulma.css'
+import Head from "next/head"
+import Image from "next/image"
+import Link from "next/link"
+import styles from "../styles/Home.module.scss"
+import "bulma/css/bulma.css"
 import moment from "moment"
-import { GA_TRACKING_ID } from '../lib/gtag'
+import { GA_TRACKING_ID } from "../lib/gtag"
+import { useLocale } from "../hooks/useLocale"
+import { useRouter } from "next/router"
 
 export default function Home() {
   type Skill = {
@@ -53,16 +56,18 @@ export default function Home() {
     const start = moment(skill.start)
     const end = skill.end === "current" ? moment() : moment(skill.end)
     const duration = moment.duration(end.diff(start))
-    return `${duration.years()}年 ${duration.months()}ヶ月 ${duration.days()}日`
+    return `${duration.years()} ${t.YEAR} ${duration.months()} ${t.MONTH} ${duration.days()} ${t.DAYS}`
   }
+  const { locale } = useRouter()
+  const { t } = useLocale()
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>ポートフォリオ | s.yasunaga</title>
+        <title>portfolio | s.yasunaga</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="エンジニアs.yasunagaのポートフォリオ、自己紹介・技術の経験年数などを紹介しています。" />
-        <meta name="keywords" content="経験年数,ruby,engineer,yasunaga,エンジニアリングで世の中を,もっと便利で楽しい世界へ" />
+        <meta name="description" content={t.DESCRIPTION} />
+        <meta name="keywords" content={t.KEYWORDS} />
         {GA_TRACKING_ID != null && (
           <>
             <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}></script>
@@ -81,81 +86,82 @@ export default function Home() {
         )}
       </Head>
       <div className={styles.inner}>
-        <section className={`${styles.firstView} ${styles.section}`}>
-          <div>
-            <h1 className={styles.title}>
-              Engineer<br />
-              s.yasunaga
-            </h1>
-            <h2 className={styles.sub}>
-              エンジニアリングで世の中を<br />
-              もっと便利で楽しい世界へ
-            </h2>
-            <div className={styles.links}>
-              <a href="https://twitter.com/shu_engineer" target="_blank" rel="noreferrer">
-                <Image
-                  src="/icons/twitter.webp"
-                  alt="twitter"
-                  width={20}
-                  height={20}
-                  className={styles.icon}
-                  priority={true}
-                />
-              </a>
-              <a href="https://www.wantedly.com/id/shuto_yasunaga" target="_blank" rel="noreferrer">
-                <Image
-                  src="/icons/wantedly.webp"
-                  alt="wantedly"
-                  width={20}
-                  height={20}
-                  className={styles.icon}
-                  priority={true}
-                />
-              </a>
-              <a href="https://qiita.com/s_yasunaga" target="_blank" rel="noreferrer">
-                <Image
-                  src="/icons/qiita.webp"
-                  alt="qiita"
-                  width={20}
-                  height={20}
-                  className={styles.icon}
-                  priority={true}
-                  style={{ filter: "brightness(0) invert(1)" }}
-                />
-              </a>
+        <section className={styles.section}>
+          <div className={styles.firstView}>
+            <div>
+              <h1 className={styles.title}>
+                Engineer<br />
+                s.yasunaga
+              </h1>
+              <h2 className={styles.sub}>
+                {t.CATCH1}<br />
+                {t.CATCH2}
+              </h2>
+              <div className={styles.links}>
+                <a href="https://twitter.com/shu_engineer" target="_blank" rel="noreferrer">
+                  <Image
+                    src="/icons/twitter.webp"
+                    alt="twitter"
+                    width={20}
+                    height={20}
+                    className={styles.icon}
+                    priority={true}
+                  />
+                </a>
+                <a href="https://www.wantedly.com/id/shuto_yasunaga" target="_blank" rel="noreferrer">
+                  <Image
+                    src="/icons/wantedly.webp"
+                    alt="wantedly"
+                    width={20}
+                    height={20}
+                    className={styles.icon}
+                    priority={true}
+                  />
+                </a>
+                <a href="https://qiita.com/s_yasunaga" target="_blank" rel="noreferrer">
+                  <Image
+                    src="/icons/qiita.webp"
+                    alt="qiita"
+                    width={20}
+                    height={20}
+                    className={styles.icon}
+                    priority={true}
+                    style={{ filter: "brightness(0) invert(1)" }}
+                  />
+                </a>
+              </div>
             </div>
+            <Image
+              className={styles.image}
+              src="/image.webp"
+              alt="image"
+              width={230}
+              height={230}
+              priority={true}
+            />
           </div>
-          <Image
-            className={styles.image}
-            src="/image.webp"
-            alt="image"
-            width={230}
-            height={230}
-            priority={true}
-          />
+          <div className={styles.toLocale}>
+            {locale === "ja"
+              ? <Link href="/en" locale="en">To English Page→</Link>
+              : <Link href="/ja" locale="ja">日本語ページへ→</Link>
+            }
+          </div>
         </section>
         <section className={`${styles.introduction} ${styles.section}`}>
           <div className={styles.box}></div>
-          <h2 className={styles.sub}>自己紹介</h2>
-          <p className={styles.text}>
-            はじめまして！
-            東京でエンジニアをしています、安永（やすなが）といいます<br />
-            2013年頃、大学時代にプログラミング（Java）に出会い、独学でプログラムを書き、その楽しさに目覚めました。<br />
-            2017年4月から、SIerの企業に新卒で入社をし、現在に至るまでフルスタックエンジニアとして
-            さまざまな企業でエンジニアリングをリード。
-            得意なのは、バックエンドのコーディング・インフラ構築・データベース設計など。<br />
-            好きなものは、麻雀🀄️・ギター🎸・ビリヤード🎱・お酒🍺
+          <h2 className={styles.sub}>{t.INTRODUCTION_TEXT}</h2>
+          <p className={styles.text} dangerouslySetInnerHTML={{ __html: t.INTRODUCTION }}>
           </p>
         </section>
         <section className={styles.section}>
-          <h2 className={styles.sub}>スキルセット</h2>
+          <h2 className={styles.sub}>{t.SKILLS_TEXT}</h2>
           <div className="mb-6">
-            <h3 className={styles.sub}>言語・フレームワーク</h3>
+            <h3 className={styles.sub}>{t.LANGS}</h3>
             <table className={`${styles.table} table is-fullwidth`}>
               <thead>
                 <tr>
-                  <td>スキル</td>
-                  <td>経験年数</td>
+                  <td>{t.SKILL}</td>
+                  <td>{t.EXPERIENCE}</td>
                 </tr>
               </thead>
               <tbody>
@@ -164,12 +170,12 @@ export default function Home() {
             </table>
           </div>
           <div className="mb-6">
-            <h3 className={styles.sub}>インフラ・DB</h3>
+            <h3 className={styles.sub}>{t.INFRA}</h3>
             <table className={`${styles.table} table is-fullwidth`}>
               <thead>
                 <tr>
-                  <td>スキル</td>
-                  <td>経験年数</td>
+                  <td>{t.SKILL}</td>
+                  <td>{t.EXPERIENCE}</td>
                 </tr>
               </thead>
               <tbody>
@@ -178,12 +184,12 @@ export default function Home() {
             </table>
           </div>
           <div>
-            <h3 className={styles.sub}>OS・その他ツール</h3>
+            <h3 className={styles.sub}>{t.OTHER}</h3>
             <table className={`${styles.table} table is-fullwidth`}>
               <thead>
                 <tr>
-                  <td>スキル</td>
-                  <td>経験年数</td>
+                  <td>{t.SKILL}</td>
+                  <td>{t.EXPERIENCE}</td>
                 </tr>
               </thead>
               <tbody>
