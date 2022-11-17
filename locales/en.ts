@@ -1,5 +1,6 @@
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
+  TITLE: "portfolio",
   DESCRIPTION: "portfolio introducing s.yasunaga and his skills",
   KEYWORDS: "experience,ruby,engineer,yasunaga,make world more convenient and fun with engineering",
   CATCH1: "Make world more convenient and fun",

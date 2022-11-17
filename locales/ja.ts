@@ -1,5 +1,6 @@
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
+  TITLE: "ポートフォリオ",
   DESCRIPTION: "エンジニアs.yasunagaのポートフォリオ、自己紹介・技術の経験年数などを紹介しています。",
   KEYWORDS: "経験年数,ruby,engineer,yasunaga,エンジニアリングで世の中を,もっと便利で楽しい世界へ",
   CATCH1: "エンジニアリングで世の中を",

@@ -64,7 +64,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>portfolio | s.yasunaga</title>
+        <title>{`${t.TITLE} | s.yasunaga`}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content={t.DESCRIPTION} />
         <meta name="keywords" content={t.KEYWORDS} />
