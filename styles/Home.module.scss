@@ -93,15 +93,18 @@ $xxl: 1408px;
     width: 100%;
     margin: auto;
     .section {
+      p {
+        text-align: left;
+      }
+      .toLocale {
+        text-align: center;
+      }
+    }
+    .firstView {
       flex-wrap: wrap;
       justify-content: center;
       text-align: center;
       flex-direction: column-reverse;
-      p {
-        text-align: left;
-      }
-    }
-    .firstView {
       .sub {
         font-size: 18px;
         text-align: center;
