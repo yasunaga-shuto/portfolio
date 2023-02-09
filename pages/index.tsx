@@ -11,52 +11,157 @@ import { useRouter } from "next/router"
 export default function Home() {
   type Skill = {
     name: string
-    start: string
-    end: string
+    experience: { start: string, end: string }[]
   }
   const langs: Skill[] = [
-    { name: "Ruby", start: "2018-09-01", end: "2021-10-01" },
-    { name: "Ruby on Rails", start: "2018-09-01", end: "2021-10-01" },
-    { name: "Javascript", start: "2018-09-01", end: "current" },
-    { name: "Shell", start: "2018-09-01", end: "current" },
-    { name: "Vue.js", start: "2019-08-01", end: "current" },
-    { name: "Go", start: "2021-07-01", end: "current" },
-    { name: "Typescript", start: "2021-10-01", end: "current" },
-    { name: "Nuxt.js", start: "2021-10-01", end: "current" },
-    { name: "VB.NET", start: "2017-06-01", end: "2018-08-01" },
-    { name: "CoffeeScript", start: "2018-09-01", end: "2019-04-01" },
-    { name: "jQuery", start: "2018-09-01", end: "2019-04-01" },
+    {
+      name: "Ruby",
+      experience: [
+        { start: "2018-09-01", end: "2021-10-01" },
+        { start: "2023-01-24", end: "2023-02-28" }
+      ]
+    },
+    {
+      name: "Ruby on Rails",
+      experience: [
+        { start: "2018-09-01", end: "2021-10-01" },
+        { start: "2023-01-24", end: "2023-02-28" }
+      ]
+    },
+    {
+      name: "Javascript",
+      experience: [{ start: "2018-09-01", end: "current" }]
+    },
+    {
+      name: "Shell",
+      experience: [{ start: "2018-09-01", end: "current" }]
+    },
+    {
+      name: "Vue.js",
+      experience: [{ start: "2019-08-01", end: "current" }]
+    },
+    {
+      name: "Go",
+      experience: [{ start: "2021-07-01", end: "current" }]
+    },
+    {
+      name: "Typescript",
+      experience: [{ start: "2021-10-01", end: "current" }]
+    },
+    {
+      name: "Nuxt.js",
+      experience: [{ start: "2021-10-01", end: "current" }]
+    },
+    {
+      name: "VB.NET",
+      experience: [{ start: "2017-06-01", end: "2018-08-01" }]
+    },
+    {
+      name: "CoffeeScript",
+      experience: [{ start: "2018-09-01", end: "2019-04-01" }]
+    },
+    {
+      name: "jQuery",
+      experience: [{ start: "2018-09-01", end: "2019-04-01" }]
+    },
   ]
   const infra: Skill[] = [
-    { name: "AWS", start: "2018-09-01", end: "2021-10-01" },
-    { name: "Docker", start: "2019-09-01", end: "current" },
-    { name: "GCP", start: "2021-11-01", end: "current" },
-    { name: "GKE", start: "2021-11-01", end: "current" },
-    { name: "Kubernetes", start: "2021-11-01", end: "current" },
-    { name: "Helm", start: "2021-11-01", end: "current" },
-    { name: "Terraform", start: "2020-04-01", end: "current" },
-    { name: "Vagrant", start: "2019-06-01", end: "2020-10-01" },
-    { name: "MySQL", start: "2018-09-01", end: "current" },
-    { name: "SQL Server", start: "2017-09-01", end: "2018-08-01" },
+    {
+      name: "AWS",
+      experience: [{ start: "2018-09-01", end: "2021-10-01" }]
+    },
+    {
+      name: "Docker",
+      experience: [{ start: "2019-09-01", end: "current" }]
+    },
+    {
+      name: "GCP",
+      experience: [{ start: "2021-11-01", end: "current" }]
+    },
+    {
+      name: "GKE",
+      experience: [{ start: "2021-11-01", end: "current" }]
+    },
+    {
+      name: "Kubernetes",
+      experience: [{ start: "2021-11-01", end: "current" }]
+    },
+    {
+      name: "Helm",
+      experience: [{ start: "2021-11-01", end: "current" }]
+    },
+    {
+      name: "Terraform",
+      experience: [{ start: "2020-04-01", end: "current" }]
+    },
+    {
+      name: "Vagrant",
+      experience: [{ start: "2019-06-01", end: "2020-10-01" }]
+    },
+    {
+      name: "MySQL",
+      experience: [{ start: "2018-09-01", end: "current" }]
+    },
+    {
+      name: "SQL Server",
+      experience: [{ start: "2017-09-01", end: "2018-08-01" }]
+    },
   ]
   const tools: Skill[] = [
-    { name: "Linux", start: "2018-09-01", end: "current" },
-    { name: "mac", start: "2019-06-01", end: "current" },
-    { name: "Windows", start: "2017-04-01", end: "2019-04-01" },
-    { name: "JIRA", start: "2020-06-01", end: "2021-10-01" },
-    { name: "GitLab", start: "2019-06-01", end: "2021-10-01" },
-    { name: "GitHub", start: "2021-11-01", end: "current" },
-    { name: "Asana", start: "2021-11-01", end: "current" },
-    { name: "Jenkins", start: "2019-06-01", end: "2021-09-01" },
-    { name: "Circle CI", start: "2021-11-01", end: "current" },
-    { name: "Elasticsearch", start: "2019-06-01", end: "2021-10-01" },
-    { name: "HTML,CSS/SCSS", start: "2018-09-01", end: "current" },
+    {
+      name: "Linux",
+      experience: [{ start: "2018-09-01", end: "current" }]
+    },
+    {
+      name: "mac",
+      experience: [{ start: "2019-06-01", end: "current" }]
+    },
+    {
+      name: "Windows",
+      experience: [{ start: "2017-04-01", end: "2019-04-01" }]
+    },
+    {
+      name: "JIRA",
+      experience: [{ start: "2020-06-01", end: "2021-10-01" }]
+    },
+    {
+      name: "GitLab",
+      experience: [{ start: "2019-06-01", end: "2021-10-01" }]
+    },
+    {
+      name: "GitHub",
+      experience: [{ start: "2021-11-01", end: "current" }]
+    },
+    {
+      name: "Asana",
+      experience: [{ start: "2021-11-01", end: "current" }]
+    },
+    {
+      name: "Jenkins",
+      experience: [{ start: "2019-06-01", end: "2021-09-01" }]
+    },
+    {
+      name: "Circle CI",
+      experience: [{ start: "2021-11-01", end: "current" }]
+    },
+    {
+      name: "Elasticsearch",
+      experience: [{ start: "2019-06-01", end: "2021-10-01" }]
+    },
+    {
+      name: "HTML,CSS/SCSS",
+      experience: [{ start: "2018-09-01", end: "current" }]
+    },
   ]
   const years = (skill: Skill) => {
-    const start = moment(skill.start)
-    const end = skill.end === "current" ? moment() : moment(skill.end)
-    const duration = moment.duration(end.diff(start))
-    return `${duration.years()} ${t.YEAR} ${duration.months()} ${t.MONTH} ${duration.days()} ${t.DAYS}`
+    const years = moment.duration()
+    for (const e of skill.experience) {
+      const start = moment(e.start)
+      const end = e.end === "current" ? moment() : moment(e.end)
+      const duration = moment.duration(end.diff(start))
+      years.add(duration)
+    }
+    return `${years.years()} ${t.YEAR} ${years.months()} ${t.MONTH} ${years.days()} ${t.DAYS}`
   }
   const { locale } = useRouter()
   const { t } = useLocale()
