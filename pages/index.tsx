@@ -65,6 +65,24 @@ export default function Home() {
       experience: [{ start: "2018-09-01", end: "2019-04-01" }]
     },
   ]
+  const libraries: Skill[] = [
+    {
+      name: "GraphQL",
+      experience: [{ start: "2023-02-01", end: "current" }],
+    },
+    {
+      name: "Boostrap",
+      experience: [{ start: "2018-09-01", end: "2021-10-01" }],
+    },
+    {
+      name: "Bulma",
+      experience: [{ start: "2021-10-01", end: "current" }]
+    },
+    {
+      name: "Buefy",
+      experience: [{ start: "2021-10-01", end: "current" }]
+    },
+  ]
   const infra: Skill[] = [
     {
       name: "AWS",
@@ -271,6 +289,20 @@ export default function Home() {
               </thead>
               <tbody>
                 {langs.map((s) => <tr key={s.name}><td>{s.name}</td><td>{years(s)}</td></tr>)}
+              </tbody>
+            </table>
+          </div>
+          <div className="mb-6">
+            <h3 className={styles.sub}>{t.LIBRARIES}</h3>
+            <table className={`${styles.table} table is-fullwidth`}>
+              <thead>
+                <tr>
+                  <td>{t.SKILL}</td>
+                  <td>{t.EXPERIENCE}</td>
+                </tr>
+              </thead>
+              <tbody>
+                {libraries.map((s) => <tr key={s.name}><td>{s.name}</td><td>{years(s)}</td></tr>)}
               </tbody>
             </table>
           </div>

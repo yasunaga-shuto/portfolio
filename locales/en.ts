@@ -15,7 +15,8 @@ export default {
     Also, my english is good enough to understand business email. My TOEIC score is 850.<br />
     My hobbies are mahjong🀄️, guitar🎸, pool🎱 and drinking🍺.`,
   SKILLS_TEXT: "Skill Set",
-  LANGS: "Languages and Frameworks",
+  LANGS: "Languages, Frameworks",
+  LIBRARIES: "Libraries",
   SKILL: "Skill",
   EXPERIENCE: "Years of experience",
   YEAR: "years",

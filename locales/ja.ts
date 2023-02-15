@@ -16,6 +16,7 @@ export default {
     好きなものは、麻雀🀄️・ギター🎸・ビリヤード🎱・お酒🍺`,
   SKILLS_TEXT: "スキルセット",
   LANGS: "言語・フレームワーク",
+  LIBRARIES: "ライブラリ・ツール",
   SKILL: "スキル",
   EXPERIENCE: "経験年数",
   YEAR: "年",
