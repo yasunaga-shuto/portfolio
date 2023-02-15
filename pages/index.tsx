@@ -71,8 +71,16 @@ export default function Home() {
       experience: [{ start: "2023-02-01", end: "current" }],
     },
     {
+      name: "Gorm",
+      experience: [{ start: "2021-10-01", end: "current" }]
+    },
+    {
+      name: "Gin",
+      experience: [{ start: "2021-10-01", end: "current" }]
+    },
+    {
       name: "Boostrap",
-      experience: [{ start: "2018-09-01", end: "2021-10-01" }],
+      experience: [{ start: "2019-06-01", end: "2021-10-01" }],
     },
     {
       name: "Bulma",
@@ -160,6 +168,14 @@ export default function Home() {
     },
     {
       name: "Circle CI",
+      experience: [{ start: "2021-11-01", end: "current" }]
+    },
+    {
+      name: "Slack",
+      experience: [{ start: "2018-09-01", end: "current" }]
+    },
+    {
+      name: "Stripe",
       experience: [{ start: "2021-11-01", end: "current" }]
     },
     {
