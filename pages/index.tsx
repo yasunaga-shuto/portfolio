@@ -72,14 +72,14 @@ export default function Home() {
     },
     {
       name: "Gorm",
-      experience: [{ start: "2021-10-01", end: "current" }]
+      experience: [{ start: "2021-07-01", end: "current" }]
     },
     {
       name: "Gin",
-      experience: [{ start: "2021-10-01", end: "current" }]
+      experience: [{ start: "2021-07-01", end: "current" }]
     },
     {
-      name: "Boostrap",
+      name: "Bootstrap",
       experience: [{ start: "2019-06-01", end: "2021-10-01" }],
     },
     {
