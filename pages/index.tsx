@@ -257,6 +257,17 @@ export default function Home() {
                     priority={true}
                   />
                 </a>
+                <a href="https://zenn.dev/s_yasunaga" target="_blank" rel="noreferrer">
+                  <Image
+                    src="/icons/zenn.svg"
+                    alt="zenn"
+                    width={20}
+                    height={20}
+                    className={styles.icon}
+                    priority={true}
+                    style={{ filter: "brightness(0) invert(1)" }}
+                  />
+                </a>
                 <a href="https://qiita.com/s_yasunaga" target="_blank" rel="noreferrer">
                   <Image
                     src="/icons/qiita.webp"
