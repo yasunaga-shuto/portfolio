@@ -237,16 +237,6 @@ export default function Home() {
                 {t.CATCH2}
               </h2>
               <div className={styles.links}>
-                <a href="https://twitter.com/shu_engineer" target="_blank" rel="noreferrer">
-                  <Image
-                    src="/icons/twitter.webp"
-                    alt="twitter"
-                    width={20}
-                    height={20}
-                    className={styles.icon}
-                    priority={true}
-                  />
-                </a>
                 <a href="https://www.wantedly.com/id/shuto_yasunaga" target="_blank" rel="noreferrer">
                   <Image
                     src="/icons/wantedly.webp"
