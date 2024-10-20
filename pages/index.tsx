@@ -18,14 +18,16 @@ export default function Home() {
       name: "Ruby",
       experience: [
         { start: "2018-09-01", end: "2021-10-01" },
-        { start: "2023-01-24", end: "2023-02-28" }
+        { start: "2023-01-24", end: "2023-02-28" },
+        { start: "2024-06-1", end: "current" },
       ]
     },
     {
       name: "Ruby on Rails",
       experience: [
         { start: "2018-09-01", end: "2021-10-01" },
-        { start: "2023-01-24", end: "2023-02-28" }
+        { start: "2023-01-24", end: "2023-02-28" },
+        { start: "2024-06-1", end: "current" },
       ]
     },
     {
@@ -42,7 +44,7 @@ export default function Home() {
     },
     {
       name: "Go",
-      experience: [{ start: "2021-07-01", end: "current" }]
+      experience: [{ start: "2021-07-01", end: "2024-05-31" }]
     },
     {
       name: "Typescript",
