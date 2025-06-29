@@ -22,5 +22,8 @@
     "react-scrollmagic": "^2.3.0",
     "sass": "^1.56.0",
     "typescript": "4.8.4"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
