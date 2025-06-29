@@ -43,6 +43,10 @@ export default function Home() {
       experience: [{ start: "2019-08-01", end: "current" }]
     },
     {
+      name: "React",
+      experience: [{ start: "2025-06-01", end: "current" }]
+    },
+    {
       name: "Go",
       experience: [{ start: "2021-07-01", end: "2024-05-31" }]
     },
@@ -53,6 +57,10 @@ export default function Home() {
     {
       name: "Nuxt.js",
       experience: [{ start: "2021-10-01", end: "current" }]
+    },
+    {
+      name: "Next.js",
+      experience: [{ start: "2025-06-01", end: "current" }]
     },
     {
       name: "VB.NET",
