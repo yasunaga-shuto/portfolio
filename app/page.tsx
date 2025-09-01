@@ -8,6 +8,7 @@ import { GA_TRACKING_ID } from "../lib/gtag"
 import { useParams } from "next/navigation"
 import en from "@/locales/en"
 import ja from "@/locales/ja"
+import { useSearchParams } from "next/navigation"
 
 export default function Home() {
   type Skill = {
@@ -208,8 +209,8 @@ export default function Home() {
     }
     return `${years.years()} ${t.YEAR} ${years.months()} ${t.MONTH} ${years.days()} ${t.DAYS}`
   }
-  const params = useParams<{ locale: string }>()
-  const locale = params?.locale
+  const searchParams = useSearchParams()
+  const locale = searchParams.get("lang") || "ja"
   const t = locale === 'ja' || !locale ? ja : en
 
   return (
@@ -294,9 +295,9 @@ export default function Home() {
             />
           </div>
           <div className="mt-[30px] text-center md:text-left">
-            {locale === "ja" || !locale
-              ? <Link href="/en" locale="en" className="text-base text-white inline-block hover:border-b hover:border-white">To English Page→</Link>
-              : <Link href="/ja" locale="ja" className="text-base text-white inline-block hover:border-b hover:border-white">日本語ページへ→</Link>
+            {locale === "ja"
+              ? <Link href="?lang=en" locale="en" className="text-base text-white inline-block hover:border-b hover:border-white">To English Page→</Link>
+              : <Link href="?lang=ja" locale="ja" className="text-base text-white inline-block hover:border-b hover:border-white">日本語ページへ→</Link>
             }
           </div>
         </section>
