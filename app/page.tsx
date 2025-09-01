@@ -1,12 +1,13 @@
+"use client"
+
 import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
-import styles from "../styles/Home.module.scss"
-import "bulma/css/bulma.css"
 import moment from "moment"
 import { GA_TRACKING_ID } from "../lib/gtag"
-import { useLocale } from "../hooks/useLocale"
-import { useRouter } from "next/router"
+import { useParams } from "next/navigation"
+import en from "@/locales/en"
+import ja from "@/locales/ja"
 
 export default function Home() {
   type Skill = {
@@ -207,11 +208,12 @@ export default function Home() {
     }
     return `${years.years()} ${t.YEAR} ${years.months()} ${t.MONTH} ${years.days()} ${t.DAYS}`
   }
-  const { locale } = useRouter()
-  const { t } = useLocale()
+  const params = useParams<{ locale: string }>()
+  const locale = params?.locale
+  const t = locale === 'ja' || !locale ? ja : en
 
   return (
-    <div className={styles.container}>
+    <div className="px-8">
       <Head>
         <title>{`${t.TITLE} | s.yasunaga`}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -234,38 +236,35 @@ export default function Home() {
           </>
         )}
       </Head>
-      <div className={styles.inner}>
-        <section className={styles.section}>
-          <div className={styles.firstView}>
+      <div className="text-white w-full md:w-[53%] mx-auto pt-[15vh] md:py-[30vh] md:pt-[30vh]">
+        <section className="mt-[5vh] mb-[50vh] last:mb-0">
+          <div className="
+            flex flex-col-reverse items-center justify-center text-center
+            md:flex-row md:justify-between md:text-left
+          ">
             <div>
-              <h1 className={styles.title}>
+              <h1 className="font-bold text-[40px] mb-5">
                 Engineer<br />
                 s.yasunaga
               </h1>
-              <h2 className={styles.sub}>
+              <h2 className="
+                font-bold
+                text-[18px] md:text-[20px]
+                text-center md:text-left
+                mb-[30px]
+              ">
                 {t.CATCH1}<br />
                 {t.CATCH2}
               </h2>
-              <div className={styles.links}>
+              <div className="flex items-center justify-center md:justify-start gap-5">
                 <a href="https://www.wantedly.com/id/shuto_yasunaga" target="_blank" rel="noreferrer">
                   <Image
                     src="/icons/wantedly.webp"
                     alt="wantedly"
                     width={20}
                     height={20}
-                    className={styles.icon}
+                    className="w-full h-full object-none"
                     priority={true}
-                  />
-                </a>
-                <a href="https://zenn.dev/s_yasunaga" target="_blank" rel="noreferrer">
-                  <Image
-                    src="/icons/zenn.svg"
-                    alt="zenn"
-                    width={20}
-                    height={20}
-                    className={styles.icon}
-                    priority={true}
-                    style={{ filter: "brightness(0) invert(1)" }}
                   />
                 </a>
                 <a href="https://qiita.com/s_yasunaga" target="_blank" rel="noreferrer">
@@ -274,7 +273,7 @@ export default function Home() {
                     alt="qiita"
                     width={20}
                     height={20}
-                    className={styles.icon}
+                    className="w-full h-full object-none"
                     priority={true}
                     style={{ filter: "brightness(0) invert(1)" }}
                   />
@@ -282,7 +281,11 @@ export default function Home() {
               </div>
             </div>
             <Image
-              className={styles.image}
+              className="
+                rounded-full object-cover
+                w-[130px] h-[130px] mx-auto
+                md:w-[230px] md:h-[230px] md:mx-0
+              "
               src="/image.webp"
               alt="image"
               width={230}
@@ -290,74 +293,98 @@ export default function Home() {
               priority={true}
             />
           </div>
-          <div className={styles.toLocale}>
-            {locale === "ja"
-              ? <Link href="/en" locale="en">To English Page→</Link>
-              : <Link href="/ja" locale="ja">日本語ページへ→</Link>
+          <div className="mt-[30px] text-center md:text-left">
+            {locale === "ja" || !locale
+              ? <Link href="/en" locale="en" className="text-base text-white inline-block hover:border-b hover:border-white">To English Page→</Link>
+              : <Link href="/ja" locale="ja" className="text-base text-white inline-block hover:border-b hover:border-white">日本語ページへ→</Link>
             }
           </div>
         </section>
-        <section className={`${styles.introduction} ${styles.section}`}>
-          <div className={styles.box}></div>
-          <h2 className={styles.sub}>{t.INTRODUCTION_TEXT}</h2>
-          <p className={styles.text} dangerouslySetInnerHTML={{ __html: t.INTRODUCTION }}>
+        <section className="relative mt-[5vh] mb-[50vh] last:mb-0">
+          <div className="hidden"></div>
+          <h2 className="font-bold text-[30px] text-center mb-[50px]">{t.INTRODUCTION_TEXT}</h2>
+          <p className="text-[17px] leading-[2.3]" dangerouslySetInnerHTML={{ __html: t.INTRODUCTION }}>
           </p>
         </section>
-        <section className={styles.section}>
-          <h2 className={styles.sub}>{t.SKILLS_TEXT}</h2>
+        <section className="mt-[5vh] mb-[50vh] last:mb-0">
+          <h2 className="font-bold text-[30px] text-center my-[50px]">{t.SKILLS_TEXT}</h2>
+
           <div className="mb-6">
-            <h3 className={styles.sub}>{t.LANGS}</h3>
-            <table className={`${styles.table} table is-fullwidth`}>
+            <h3 className="font-bold text-[23px] text-center my-[60px]">{t.LANGS}</h3>
+            <table className="w-full table-auto border-collapse bg-transparent text-white">
               <thead>
-                <tr>
-                  <td>{t.SKILL}</td>
-                  <td>{t.EXPERIENCE}</td>
+                <tr className="text-left border-b-2 border-gray-200">
+                  <td className="py-3">{t.SKILL}</td>
+                  <td className="py-3">{t.EXPERIENCE}</td>
                 </tr>
               </thead>
               <tbody>
-                {langs.map((s) => <tr key={s.name}><td>{s.name}</td><td>{years(s)}</td></tr>)}
+                {langs.map((s) => (
+                  <tr key={s.name} className="border-b-1 border-gray-200">
+                    <td className="py-3">{s.name}</td>
+                    <td className="py-3">{years(s)}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
+
           <div className="mb-6">
-            <h3 className={styles.sub}>{t.LIBRARIES}</h3>
-            <table className={`${styles.table} table is-fullwidth`}>
+            <h3 className="font-bold text-[23px] text-center my-[60px]">{t.LIBRARIES}</h3>
+            <table className="w-full table-auto border-collapse bg-transparent text-white">
               <thead>
-                <tr>
-                  <td>{t.SKILL}</td>
-                  <td>{t.EXPERIENCE}</td>
+                <tr className="text-left border-b-2 border-gray-200">
+                  <th className="py-2">{t.SKILL}</th>
+                  <th className="py-2">{t.EXPERIENCE}</th>
                 </tr>
               </thead>
               <tbody>
-                {libraries.map((s) => <tr key={s.name}><td>{s.name}</td><td>{years(s)}</td></tr>)}
+                {libraries.map((s) => (
+                  <tr key={s.name} className="border-b-1 border-gray-200">
+                    <td className="py-3">{s.name}</td>
+                    <td className="py-3">{years(s)}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
+
           <div className="mb-6">
-            <h3 className={styles.sub}>{t.INFRA}</h3>
-            <table className={`${styles.table} table is-fullwidth`}>
+            <h3 className="font-bold text-[23px] text-center my-[60px]">{t.INFRA}</h3>
+            <table className="w-full table-auto border-collapse bg-transparent text-white">
               <thead>
-                <tr>
-                  <td>{t.SKILL}</td>
-                  <td>{t.EXPERIENCE}</td>
+                <tr className="text-left border-b-2 border-gray-200">
+                  <td className="py-3">{t.SKILL}</td>
+                  <td className="py-3">{t.EXPERIENCE}</td>
                 </tr>
               </thead>
               <tbody>
-                {infra.map((s) => <tr key={s.name}><td>{s.name}</td><td>{years(s)}</td></tr>)}
+                {infra.map((s) => (
+                  <tr key={s.name} className="border-b-1 border-gray-200">
+                    <td className="py-3">{s.name}</td>
+                    <td className="py-3">{years(s)}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
+
           <div>
-            <h3 className={styles.sub}>{t.OTHER}</h3>
-            <table className={`${styles.table} table is-fullwidth`}>
+            <h3 className="font-bold text-[23px] text-center my-[60px]">{t.OTHER}</h3>
+            <table className="w-full table-auto border-collapse bg-transparent text-white">
               <thead>
-                <tr>
-                  <td>{t.SKILL}</td>
-                  <td>{t.EXPERIENCE}</td>
+                <tr className="text-left border-b-2 border-gray-200">
+                  <td className="py-3">{t.SKILL}</td>
+                  <td className="py-3">{t.EXPERIENCE}</td>
                 </tr>
               </thead>
               <tbody>
-                {tools.map((s) => <tr key={s.name}><td>{s.name}</td><td>{years(s)}</td></tr>)}
+                {tools.map((s) => (
+                  <tr key={s.name} className="border-b-1 border-gray-200">
+                    <td className="py-3">{s.name}</td>
+                    <td className="py-3">{years(s)}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
