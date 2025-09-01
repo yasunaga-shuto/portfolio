@@ -207,8 +207,8 @@ export default function Home() {
     const years = (skill: Skill) => {
       const years = moment.duration()
       for (const e of skill.experience) {
-        const start = moment(e.start)
-        const end = e.end === "current" ? moment() : moment(e.end)
+        const start = moment(e.start, "YYYY-MM-DD")
+        const end = e.end === "current" ? moment() : moment(e.end, "YYYY-MM-DD")
         const duration = moment.duration(end.diff(start))
         years.add(duration)
       }
@@ -298,8 +298,8 @@ export default function Home() {
             </div>
             <div className="mt-[30px] text-center md:text-left">
               {locale === "ja"
-                ? <Link href="?lang=en" locale="en" className="text-base text-white inline-block hover:border-b hover:border-white">To English Page→</Link>
-                : <Link href="?lang=ja" locale="ja" className="text-base text-white inline-block hover:border-b hover:border-white">日本語ページへ→</Link>
+                ? <Link href="?lang=en" className="text-base text-white inline-block hover:border-b hover:border-white">To English Page→</Link>
+                : <Link href="?lang=ja" className="text-base text-white inline-block hover:border-b hover:border-white">日本語ページへ→</Link>
               }
             </div>
           </section>
