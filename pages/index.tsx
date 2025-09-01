@@ -56,11 +56,11 @@ export default function Home() {
     },
     {
       name: "Nuxt.js",
-      experience: [{ start: "2021-10-01", end: "current" }]
+      experience: [{ start: "2021-10-01", end: "2024-05-31" }]
     },
     {
       name: "Next.js",
-      experience: [{ start: "2025-06-01", end: "current" }]
+      experience: [{ start: "2025-06-01", end: "2025-09-30" }]
     },
     {
       name: "VB.NET",
@@ -78,15 +78,15 @@ export default function Home() {
   const libraries: Skill[] = [
     {
       name: "GraphQL",
-      experience: [{ start: "2023-02-01", end: "current" }],
+      experience: [{ start: "2023-02-01", end: "2024-05-31" }],
     },
     {
       name: "Gorm",
-      experience: [{ start: "2021-07-01", end: "current" }]
+      experience: [{ start: "2021-07-01", end: "2024-05-31" }]
     },
     {
       name: "Gin",
-      experience: [{ start: "2021-07-01", end: "current" }]
+      experience: [{ start: "2021-07-01", end: "2024-05-31" }]
     },
     {
       name: "Bootstrap",
@@ -94,11 +94,11 @@ export default function Home() {
     },
     {
       name: "Bulma",
-      experience: [{ start: "2021-10-01", end: "current" }]
+      experience: [{ start: "2021-10-01", end: "2024-05-31" }]
     },
     {
       name: "Buefy",
-      experience: [{ start: "2021-10-01", end: "current" }]
+      experience: [{ start: "2021-10-01", end: "2024-05-31" }]
     },
   ]
   const infra: Skill[] = [
@@ -112,23 +112,23 @@ export default function Home() {
     },
     {
       name: "GCP",
-      experience: [{ start: "2021-11-01", end: "current" }]
+      experience: [{ start: "2021-11-01", end: "2024-05-31" }]
     },
     {
       name: "GKE",
-      experience: [{ start: "2021-11-01", end: "current" }]
+      experience: [{ start: "2021-11-01", end: "2024-05-31" }]
     },
     {
       name: "Kubernetes",
-      experience: [{ start: "2021-11-01", end: "current" }]
+      experience: [{ start: "2021-11-01", end: "2024-05-31" }]
     },
     {
       name: "Helm",
-      experience: [{ start: "2021-11-01", end: "current" }]
+      experience: [{ start: "2021-11-01", end: "2024-05-31" }]
     },
     {
       name: "Terraform",
-      experience: [{ start: "2020-04-01", end: "current" }]
+      experience: [{ start: "2020-04-01", end: "2024-05-31" }]
     },
     {
       name: "Vagrant",
@@ -170,7 +170,7 @@ export default function Home() {
     },
     {
       name: "Asana",
-      experience: [{ start: "2021-11-01", end: "current" }]
+      experience: [{ start: "2021-11-01", end: "2024-05-31" }]
     },
     {
       name: "Jenkins",
@@ -178,7 +178,7 @@ export default function Home() {
     },
     {
       name: "Circle CI",
-      experience: [{ start: "2021-11-01", end: "current" }]
+      experience: [{ start: "2021-11-01", end: "2024-05-31" }]
     },
     {
       name: "Slack",
@@ -186,7 +186,7 @@ export default function Home() {
     },
     {
       name: "Stripe",
-      experience: [{ start: "2021-11-01", end: "current" }]
+      experience: [{ start: "2021-11-01", end: "2024-05-31" }]
     },
     {
       name: "Elasticsearch",
