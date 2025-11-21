@@ -21,8 +21,8 @@ export default function Home() {
       experience: [
         { start: "2018-09-01", end: "2021-10-01" },
         { start: "2023-01-24", end: "2023-02-28" },
-        { start: "2024-06-01", end: "2025-09-30" },
-        { start: "2024-11-01", end: "current" },
+        { start: "2025-06-01", end: "2025-09-30" },
+        { start: "2025-11-01", end: "current" },
       ]
     },
     {
@@ -30,8 +30,8 @@ export default function Home() {
       experience: [
         { start: "2018-09-01", end: "2021-10-01" },
         { start: "2023-01-24", end: "2023-02-28" },
-        { start: "2024-06-01", end: "2025-09-30" },
-        { start: "2024-11-01", end: "current" },
+        { start: "2025-06-01", end: "2025-09-30" },
+        { start: "2025-11-01", end: "current" },
       ]
     },
     {
@@ -49,8 +49,8 @@ export default function Home() {
     {
       name: "React",
       experience: [
-        { start: "2024-06-01", end: "2025-09-30" },
-        { start: "2024-11-01", end: "current" },
+        { start: "2025-06-01", end: "2025-09-30" },
+        { start: "2025-11-01", end: "current" },
       ]
     },
     {
