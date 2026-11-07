@@ -26,6 +26,6 @@ jobs:
 
       - run: yarn install --frozen-lockfile
       - run: yarn lint
-      - run: npx tsc --noEmit
+      - run: yarn typecheck
       - run: yarn test
       - run: yarn build
