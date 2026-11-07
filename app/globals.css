@@ -28,9 +28,9 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-noto-sans-jp), system-ui, sans-serif;
-  --font-display: var(--font-space-grotesk), var(--font-noto-sans-jp), sans-serif;
-  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+  --font-sans: "Noto Sans JP", system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), "Noto Sans JP", sans-serif;
+  --font-mono: var(--font-jetbrains-mono), "Noto Sans JP", ui-monospace, monospace;
 }
 
 html {
