@@ -24,7 +24,7 @@ export const timeline: TimelineItem[] = [
     start: [2021, 11],
     end: [2024, 5],
     dateLabel: "2021.11 — 2024.05",
-    org: "Spelis Inc.",
+    org: "Spalice Inc.",
     title: "Building a rental space platform from scratch",
     body: "Joined a startup as a co-founding member. Worked full stack, from infrastructure to frontend and backend, on an architecture with a Go API and a separate Nuxt.js frontend. Built each environment with Kubernetes and Helm, and set up CI/CD on CircleCI.",
     tags: ["Go", "Nuxt.js", "GKE", "Kubernetes", "Helm", "Circle CI"],
