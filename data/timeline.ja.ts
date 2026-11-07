@@ -1,0 +1,61 @@
+import type { TimelineItem } from "./timeline";
+
+export const timeline: TimelineItem[] = [
+  {
+    start: [2025, 11],
+    current: true,
+    dateLabel: "2025.11 — 現在",
+    org: "株式会社ベースミー",
+    title: "新卒向けスカウトサービス「BaseMe」の開発",
+    body: "toB側の「AIリクルーター」「AI Agent」を開発。Claude Codeなどを中心としたAIネイティブな開発で、月に数百PRを出す超高スピードな開発に従事。",
+    tags: ["Next.js", "Ruby on Rails", "AWS", "Terraform", "Claude Code"],
+  },
+  {
+    start: [2024, 6],
+    end: [2025, 9],
+    dateLabel: "2024.06 — 2025.09",
+    org: "株式会社エル・ティー・エス リンク",
+    title: "「assign navi」運用・保守 / 研修サービスLPの新規開発",
+    body: "Rails・Elasticsearch・MySQLのバージョンアップを主導し、ペアプロで新人育成も担当。LPはNext.jsを短期間でキャッチアップし約3ヶ月でリリース。GitHub Actionsでデプロイ時間を約10分から約3分に短縮。",
+    tags: ["Ruby on Rails", "Elasticsearch", "React", "Next.js", "GitHub Actions"],
+  },
+  {
+    start: [2021, 11],
+    end: [2024, 5],
+    dateLabel: "2021.11 — 2024.05",
+    org: "スペリス株式会社",
+    title: "レンタルスペースのプラットフォームを新規開発",
+    body: "スタートアップの共同創業に参画。GoのAPIとNuxt.jsのフロントを分離した構成で、インフラからフロントエンド・バックエンドまでフルスタックで担当。Kubernetes・Helmで各環境を構築し、Circle CIでCI/CDを整備。",
+    tags: ["Go", "Nuxt.js", "GKE", "Kubernetes", "Helm", "Circle CI"],
+  },
+  {
+    start: [2019, 6],
+    end: [2021, 10],
+    dateLabel: "2019.06 — 2021.10",
+    org: "株式会社エル・ティー・エス",
+    title: "企業口コミプラットフォーム「CS Clip」の新規開発・運用 ほか",
+    body: "新規開発から運用・保守までをフルスタックで担当。ECS環境とCI/CDを整備し、ビルド時間を30分から5分に短縮。開発環境のVagrantからDockerへの移行や、JIRAへの移行も主導。",
+    tags: ["Ruby on Rails", "Vue.js", "AWS ECS", "Docker", "GitLab"],
+  },
+  {
+    start: [2017, 4],
+    end: [2019, 4],
+    dateLabel: "2017.04 — 2019.04",
+    org: "株式会社スタイル・フリー",
+    title: "SIerに新卒入社、業務システムからWebサービスまで",
+    body: "会員制Webシステムや基幹システムの運用・保守、経理向けデスクトップアプリの新規構築を担当。規格外野菜のフリマサイト「unica」では、Ruby on Railsでの開発を提案・主導し、設計から実装まで幅広く対応。",
+    tags: ["Ruby on Rails", "VB.NET", "ASP.NET", "SQL Server", "MySQL"],
+  },
+  {
+    dateLabel: "2015.10",
+    org: "資格",
+    title: "基本情報技術者試験に合格",
+    body: "情報処理の基礎知識を体系的に学習。",
+  },
+  {
+    dateLabel: "2013頃",
+    org: "大学時代",
+    title: "プログラミングとの出会い",
+    body: "大学生時代にプログラミング（Java）に出会い、独学でゲームなどを作っていました。",
+  },
+];

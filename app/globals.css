@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
-html,
+@theme {
+  --color-accent: #2457e6;
+  --color-accent-on-dark: #7db3ff;
+  --color-accent-soft: color-mix(in srgb, #2457e6 10%, #ffffff);
+  --color-accent-ink: color-mix(in srgb, #2457e6 75%, #000000);
+  --color-hero-bg: #e3eeff;
+  --color-page-bg: #f7faff;
+  --color-surface: #ffffff;
+  --color-navy: #0b1a36;
+  --color-navy-2: #13264c;
+  --color-navy-border: #1e3362;
+  --color-navy-border-2: #26396a;
+  --color-text: #0b1a36;
+  --color-text-2: #34496e;
+  --color-text-3: #4d5e7c;
+  --color-border: #e0e8f5;
+  --color-border-2: #d3ddee;
+  --color-border-btn: #b8cbeb;
+  --color-muted-dot: #a9b8d3;
+  --color-on-dark: #ffffff;
+  --color-on-dark-2: #a2b6da;
+  --color-on-dark-3: #c3d3ee;
+  --color-signal-red: #ff6b6b;
+  --color-signal-yellow: #ffc857;
+  --color-signal-green: #4cd18a;
+}
+
+@theme inline {
+  --font-sans: "Noto Sans JP", system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), "Noto Sans JP", sans-serif;
+  --font-mono: var(--font-jetbrains-mono), "Noto Sans JP", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
-  padding: 0;
   margin: 0;
-  font-family: 'Work Sans', sans-serif !important;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  color: white;
-  background: #798DC5;
-}
-::selection {
-  color: #2b2e63;
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--color-page-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.8;
 }

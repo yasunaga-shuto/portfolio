@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>portfolio | s.yasunaga</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F7FAFF}
+.tl-card-date{display:none}
+@media (max-width: 640px){.tl-axis{display:none !important}.tl-card-date{display:block}}
+a{color:#0B1A36}a:hover{color:#2457E6}
+</style>
+</helmet>
+<div style="width: 100%; background: #F7FAFF; color: #0B1A36; font-family: 'Noto Sans JP', system-ui, sans-serif; font-size: 16px; line-height: 1.8">
+
+<header style="background: #E3EEFF; color: #0B1A36; position: relative">
+<nav style="max-width: 1200px; margin: 0 auto; padding: 24px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px" aria-label="メイン">
+<a href="#top" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -0.01em; color: #0B1A36; text-decoration: none">s.yasunaga<span style="color: {{accent}}">.</span></a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+<a href="#about" style="color: #34496E; text-decoration: none; font-size: 14px; padding: 12px 14px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">自己紹介</a>
+<a href="#timeline" style="color: #34496E; text-decoration: none; font-size: 14px; padding: 12px 14px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">タイムライン</a>
+<a href="#skills" style="color: #34496E; text-decoration: none; font-size: 14px; padding: 12px 14px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">スキルセット</a>
+<a href="https://portfolio-yasunaga-shuto.vercel.app/?lang=en" style="color: #0B1A36; text-decoration: none; font-size: 14px; font-family: 'Space Grotesk', sans-serif; font-weight: 500; padding: 10px 18px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; border: 1px solid #B8CBEB; border-radius: 999px">To English Page→</a>
+</div>
+</nav>
+
+<div id="top" style="max-width: 1200px; margin: 0 auto; padding: 88px 32px 112px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 56px 72px">
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 32px">
+
+<h1 style="margin: 0; font-size: clamp(32px, 4vw, 54px); font-weight: 700; line-height: 1.35; letter-spacing: -0.02em; color: #0B1A36; white-space: pre-line">エンジニアリングで、
+世の中をもっと<span style="color: {{accent}}">便利</span>に、
+もっと<span style="color: {{accent}}">楽しく</span>。</h1>
+<p style="margin: 0; max-width: 560px; font-size: 17px; line-height: 1.9; color: #34496E">東京を拠点に活動するフリーランスのフルスタックエンジニア。守備範囲の広さを武器に、プロダクトの土台づくりからリードまで担当します。</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px">
+<a href="#skills" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; box-sizing: border-box; border-radius: 999px; background: {{accent}}; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px">スキルセットを見る
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M6 13l6 6 6-6"></path></svg></a>
+<a href="#about" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; box-sizing: border-box; border-radius: 999px; border: 1px solid #B8CBEB; background: #FFFFFF; color: #0B1A36; text-decoration: none; font-weight: 700; font-size: 15px">自己紹介</a>
+</div>
+</div>
+
+<div style="flex: 1 1 320px; display: flex; justify-content: center">
+<div style="width: 420px; max-width: 100%; border-radius: 16px; background: #0B1A36; border: 1px solid #1E3362; overflow: hidden; box-shadow: 0 24px 60px rgba(36,87,230,0.22)">
+<div style="display: flex; align-items: center; gap: 8px; padding: 14px 18px; background: #13264C; border-bottom: 1px solid #26396A">
+<span style="width: 12px; height: 12px; border-radius: 50%; background: #FF6B6B" aria-hidden="true"></span>
+<span style="width: 12px; height: 12px; border-radius: 50%; background: #FFC857" aria-hidden="true"></span>
+<span style="width: 12px; height: 12px; border-radius: 50%; background: #4CD18A" aria-hidden="true"></span>
+<span style="margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #A2B6DA">~/s.yasunaga — zsh</span>
+</div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 18px; font-family: 'JetBrains Mono', monospace; font-size: 14px; line-height: 1.7; color: #FFFFFF">
+<p style="margin: 0; color: #A2B6DA"><span style="color: {{accentOnDark}}">$</span> whoami</p>
+<div style="display: flex; align-items: center; gap: 16px">
+<img src="/_blob/c87333a865be6ae36299b002d12003e8" alt="安永のプロフィール写真" style="width: 88px; height: 88px; border-radius: 12px; object-fit: cover; object-position: 50% 30%; border: 2px solid {{accentOnDark}}; flex: 0 0 auto">
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; color: #FFFFFF">s.yasunaga</p>
+<p style="margin: 0; font-family: 'Noto Sans JP', sans-serif; font-size: 13px; color: #A2B6DA">安永（やすなが）</p>
+</div>
+</div>
+<p style="margin: 0; color: #A2B6DA"><span style="color: {{accentOnDark}}">$</span> cat profile.yml</p>
+<div style="display: flex; flex-direction: column; gap: 4px; padding-left: 4px">
+<p style="margin: 0"><span style="color: {{accentOnDark}}">role</span><span style="color: #A2B6DA">: </span><span style="font-family: 'Noto Sans JP', sans-serif">フルスタックエンジニア</span></p>
+<p style="margin: 0"><span style="color: {{accentOnDark}}">base</span><span style="color: #A2B6DA">: </span><span style="font-family: 'Noto Sans JP', sans-serif">東京・フリーランス</span></p>
+<p style="margin: 0"><span style="color: {{accentOnDark}}">focus</span><span style="color: #A2B6DA">: </span>[backend, infra, db]</p>
+<p style="margin: 0"><span style="color: {{accentOnDark}}">since</span><span style="color: #A2B6DA">: </span>2017</p>
+</div>
+<p style="margin: 0; color: #A2B6DA"><span style="color: {{accentOnDark}}">$</span> open <a href="https://www.wantedly.com/id/shuto_yasunaga" style="color: #FFFFFF; text-decoration: underline; text-underline-offset: 3px; display: inline-block; padding: 10px 0">wantedly</a> <a href="https://qiita.com/s_yasunaga" style="color: #FFFFFF; text-decoration: underline; text-underline-offset: 3px; display: inline-block; padding: 10px 0">qiita</a><span style="display: inline-block; width: 8px; height: 16px; margin-left: 6px; vertical-align: -2px; background: {{accentOnDark}}" aria-hidden="true"></span></p>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<section id="about" style="max-width: 1200px; margin: 0 auto; padding: 120px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px 80px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: {{accent}}">01 — ABOUT</p>
+<h2 style="margin: 0; font-size: 40px; font-weight: 700; line-height: 1.3; letter-spacing: -0.01em">自己紹介</h2>
+</div>
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 40px">
+<p style="margin: 0; font-size: 26px; font-weight: 700; line-height: 1.6">はじめまして！ 東京でフリーランスのエンジニアをしています、安永（やすなが）といいます。</p>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch">
+
+<div style="flex: 1 1 220px; background: #FFFFFF; border: 1px solid #E0E8F5; border-radius: 20px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: {{accent}}">STRENGTHS</p>
+<h3 style="margin: 0; font-size: 18px; font-weight: 700">得意なこと</h3>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+<li style="display: flex; align-items: center; gap: 10px; color: #34496E"><span style="width: 6px; height: 6px; border-radius: 50%; background: {{accent}}; flex: 0 0 auto" aria-hidden="true"></span>バックエンドのコーディング</li>
+<li style="display: flex; align-items: center; gap: 10px; color: #34496E"><span style="width: 6px; height: 6px; border-radius: 50%; background: {{accent}}; flex: 0 0 auto" aria-hidden="true"></span>インフラ構築</li>
+<li style="display: flex; align-items: center; gap: 10px; color: #34496E"><span style="width: 6px; height: 6px; border-radius: 50%; background: {{accent}}; flex: 0 0 auto" aria-hidden="true"></span>データベース設計</li>
+</ul>
+</div>
+
+<div style="flex: 1 1 220px; background: #FFFFFF; border: 1px solid #E0E8F5; border-radius: 20px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: {{accent}}">LANGUAGE</p>
+<h3 style="margin: 0; font-size: 18px; font-weight: 700">語学</h3>
+</div>
+<p style="margin: 0; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 600; color: #4D5E7C">TOEIC</span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 700; line-height: 1; color: #0B1A36">850</span><span style="font-size: 14px; color: #4D5E7C">点</span></p>
+<p style="margin: 0; font-size: 15px; color: #34496E">英語ドキュメントの翻訳とかもたまにやっています。</p>
+</div>
+
+<div style="flex: 1 1 220px; background: #FFFFFF; border: 1px solid #E0E8F5; border-radius: 20px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: {{accent}}">FAVORITES</p>
+<h3 style="margin: 0; font-size: 18px; font-weight: 700">好きなもの</h3>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px">
+<li style="padding: 8px 16px; border-radius: 999px; background: {{accentSoft}}; color: {{accentInk}}; font-weight: 500; font-size: 14px">麻雀</li>
+<li style="padding: 8px 16px; border-radius: 999px; background: {{accentSoft}}; color: {{accentInk}}; font-weight: 500; font-size: 14px">ギター</li>
+<li style="padding: 8px 16px; border-radius: 999px; background: {{accentSoft}}; color: {{accentInk}}; font-weight: 500; font-size: 14px">ビリヤード</li>
+<li style="padding: 8px 16px; border-radius: 999px; background: {{accentSoft}}; color: {{accentInk}}; font-weight: 500; font-size: 14px">お酒</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="timeline" style="background: #FFFFFF; border-top: 1px solid #E0E8F5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 120px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px 80px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: {{accent}}">02 — TIMELINE</p>
+<h2 style="margin: 0; font-size: 40px; font-weight: 700; line-height: 1.3; letter-spacing: -0.01em">タイムライン</h2>
+</div>
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<p style="margin: 0; font-size: 14px; color: #4D5E7C">新しい順・全{{tlTotal}}件</p>
+</div>
+<div style="position: relative">
+<ol id="timeline-list" style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 20px">
+<sc-for list="{{tlItems}}" as="t" hint-placeholder-count="2">
+<li id="{{t.id}}" style="display: flex; gap: 16px; scroll-margin-top: 96px">
+<div class="tl-axis" style="flex: 0 0 92px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end; gap: 8px; text-align: right; padding: 25px 0 2px" aria-hidden="true">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 600; line-height: 1.3; color: {{t.endColor}}">{{t.endLabel}}</span>
+<sc-if value="{{t.hasStart}}" hint-placeholder-val="{{ true }}">
+<span style="font-size: 16px; font-weight: 700; line-height: 1.3; color: #0B1A36">{{t.dur}}</span>
+</sc-if>
+<sc-if value="{{t.hasStart}}" hint-placeholder-val="{{ true }}">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.3; color: #4D5E7C">{{t.startLabel}}</span>
+</sc-if>
+</div>
+<div style="flex: 0 0 16px; display: flex; flex-direction: column; align-items: center; padding: 28px 0 6px" aria-hidden="true">
+<span style="flex: 0 0 auto; width: 16px; height: 16px; border-radius: 50%; background: {{t.dotFill}}; border: 3px solid {{accent}}; box-sizing: border-box"></span>
+<sc-if value="{{t.hasStart}}" hint-placeholder-val="{{ true }}">
+<span style="flex: 1 1 auto; width: 2px; margin: 4px 0; background: {{t.lineColor}}"></span>
+</sc-if>
+<sc-if value="{{t.hasStart}}" hint-placeholder-val="{{ true }}">
+<span style="flex: 0 0 auto; width: 10px; height: 10px; border-radius: 50%; background: #FFFFFF; border: 2px solid #A9B8D3; box-sizing: border-box"></span>
+</sc-if>
+</div>
+<div style="flex: 1 1 auto; min-width: 0; background: #F7FAFF; border: 1px solid #E0E8F5; border-radius: 20px; padding: 24px 28px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px">
+<p class="tl-card-date" style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 500; color: {{accent}}">{{t.date}}</p>
+<p style="margin: 0; font-size: 13px; color: #4D5E7C">{{t.org}}</p>
+</div>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700; line-height: 1.5">{{t.title}}</h3>
+<p style="margin: 0; color: #34496E">{{t.body}}</p>
+<sc-if value="{{t.hasTags}}" hint-placeholder-val="{{ true }}">
+<ul style="list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px">
+<sc-for list="{{t.tags}}" as="tag" hint-placeholder-count="4">
+<li style="padding: 3px 10px; border-radius: 6px; background: #FFFFFF; border: 1px solid #D3DDEE; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #34496E">{{tag}}</li>
+</sc-for>
+</ul>
+</sc-if>
+</div>
+</li>
+</sc-for>
+</ol>
+<sc-if value="{{tlShowFade}}" hint-placeholder-val="{{ false }}">
+<div style="position: absolute; left: 0; right: 0; bottom: 0; height: 140px; background: linear-gradient(to bottom, rgba(255,255,255,0), #FFFFFF 85%); pointer-events: none" aria-hidden="true"></div>
+</sc-if>
+</div>
+<sc-if value="{{tlHasMore}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; justify-content: center">
+<button type="button" onClick="{{tlToggle}}" aria-expanded="{{tlOpen}}" aria-controls="timeline-list" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 24px; border-radius: 999px; border: 1px solid #B8CBEB; background: #FFFFFF; color: #0B1A36; font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-size: 15px; cursor: pointer">{{tlLabel}}
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transform: {{tlChevron}}"><path d="M6 9l6 6 6-6"></path></svg></button>
+</div>
+</sc-if>
+</div>
+</div>
+</section>
+
+<section id="skills" style="background: #F7FAFF; border-top: 1px solid #E0E8F5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 120px 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: {{accent}}">03 — SKILLS</p>
+<h2 style="margin: 0; font-size: 40px; font-weight: 700; line-height: 1.3; letter-spacing: -0.01em">スキルセット</h2>
+</div>
+<p style="margin: 0; display: inline-flex; align-items: center; gap: 10px; font-size: 14px; color: #4D5E7C"><span style="display: inline-block; width: 28px; height: 6px; border-radius: 3px; background: {{accent}}" aria-hidden="true"></span>バーの長さ = 経験年数</p>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<sc-for list="{{groups}}" as="g" hint-placeholder-count="4">
+<div style="flex: 1 1 480px; min-width: 0; background: #FFFFFF; border: 1px solid #E0E8F5; border-radius: 24px; padding: 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px">
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">{{g.title}}</h3>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #4D5E7C">{{g.count}} skills</span>
+</div>
+<table style="width: 100%; border-collapse: collapse">
+<thead>
+<tr>
+<th scope="col" style="text-align: left; font-weight: 500; font-size: 12px; color: #4D5E7C; padding: 0 0 8px; border-bottom: 1px solid #D3DDEE">スキル</th>
+<th scope="col" style="text-align: right; font-weight: 500; font-size: 12px; color: #4D5E7C; padding: 0 0 8px; border-bottom: 1px solid #D3DDEE">経験年数</th>
+</tr>
+</thead>
+<tbody>
+<sc-for list="{{g.items}}" as="s" hint-placeholder-count="6">
+<tr>
+<td style="padding: 12px 16px 12px 0; border-bottom: 1px solid #E0E8F5; vertical-align: middle">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Space Grotesk', 'Noto Sans JP', sans-serif; font-weight: 600; font-size: 16px; line-height: 1.3">{{s.name}}</span>
+<span style="display: block; height: 6px; border-radius: 3px; background: #E0E8F5; overflow: hidden" aria-hidden="true"><span style="display: block; height: 100%; border-radius: 3px; background: {{accent}}; width: {{s.pct}}"></span></span>
+</div>
+</td>
+<td style="padding: 12px 0; border-bottom: 1px solid #E0E8F5; text-align: right; white-space: nowrap; vertical-align: middle; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #34496E">{{s.label}}</td>
+</tr>
+</sc-for>
+</tbody>
+</table>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<footer style="background: #0B1A36; color: #A2B6DA">
+<div style="max-width: 1200px; margin: 0 auto; padding: 40px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px; color: #FFFFFF">s.yasunaga<span style="color: {{accentOnDark}}">.</span></span>
+<a href="#top" style="color: #C3D3EE; text-decoration: none; font-size: 14px; min-height: 44px; display: inline-flex; align-items: center">ページトップへ ↑</a>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#2457E6","options":["#2457E6","#0F7B6C","#C2410C","#0E1A30"]},"accentOnDark":{"editor":"color","default":"#7DB3FF","options":["#7DB3FF","#5FD4BF","#FDBA74","#FFFFFF"]},"sortByYears":{"editor":"boolean","default":true},"timelineVisible":{"editor":"int","default":3,"min":1,"max":10,"section":"Timeline"},"$preview":{"width":1440,"height":3700}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const accent = this.props.accent ?? '#2457E6';
+    const accentOnDark = this.props.accentOnDark ?? '#7DB3FF';
+    const sort = this.props.sortByYears ?? true;
+    // タイムライン（新しい順に書く）
+    const timeline = [
+      { start: [2025, 11], short: 'ベースミー', date: '2025.11 — 現在', org: '株式会社ベースミー', title: '新卒向けスカウトサービス「BaseMe」の開発', body: 'toB側の「AIリクルーター」「AI Agent」を開発。Claude Codeなどを中心としたAIネイティブな開発で、月に数百PRを出す超高スピードな開発に従事。', tags: ['Next.js', 'Ruby on Rails', 'AWS', 'Terraform', 'Claude Code'], current: true },
+      { start: [2024, 6], end: [2025, 9], short: 'エル・ティー・エス リンク', date: '2024.06 — 2025.09', org: '株式会社エル・ティー・エス リンク', title: '「assign navi」運用・保守 / 研修サービスLPの新規開発', body: 'Rails・Elasticsearch・MySQLのバージョンアップを主導し、ペアプロで新人育成も担当。LPはNext.jsを短期間でキャッチアップし約3ヶ月でリリース。GitHub Actionsでデプロイ時間を約10分から約3分に短縮。', tags: ['Ruby on Rails', 'Elasticsearch', 'React', 'Next.js', 'GitHub Actions'] },
+      { start: [2021, 11], end: [2024, 5], short: 'スペリス', date: '2021.11 — 2024.05', org: 'スペリス株式会社', title: 'レンタルスペースのプラットフォームを新規開発', body: 'スタートアップの共同創業に参画。GoのAPIとNuxt.jsのフロントを分離した構成で、インフラからフロントエンド・バックエンドまでフルスタックで担当。Kubernetes・Helmで各環境を構築し、Circle CIでCI/CDを整備。', tags: ['Go', 'Nuxt.js', 'GKE', 'Kubernetes', 'Helm', 'Circle CI'] },
+      { start: [2019, 6], end: [2021, 10], short: 'エル・ティー・エス', date: '2019.06 — 2021.10', org: '株式会社エル・ティー・エス', title: '企業口コミプラットフォーム「CS Clip」の新規開発・運用 ほか', body: '新規開発から運用・保守までをフルスタックで担当。ECS環境とCI/CDを整備し、ビルド時間を30分から5分に短縮。開発環境のVagrantからDockerへの移行や、JIRAへの移行も主導。', tags: ['Ruby on Rails', 'Vue.js', 'AWS ECS', 'Docker', 'GitLab'] },
+      { start: [2017, 4], end: [2019, 4], short: 'スタイル・フリー', date: '2017.04 — 2019.04', org: '株式会社スタイル・フリー', title: 'SIerに新卒入社、業務システムからWebサービスまで', body: '会員制Webシステムや基幹システムの運用・保守、経理向けデスクトップアプリの新規構築を担当。規格外野菜のフリマサイト「unica」では、Ruby on Railsでの開発を提案・主導し、設計から実装まで幅広く対応。', tags: ['Ruby on Rails', 'VB.NET', 'ASP.NET', 'SQL Server', 'MySQL'] },
+      { date: '2015.10', org: '資格', title: '基本情報技術者試験に合格', body: '情報処理の基礎知識を体系的に学習。' },
+      { date: '2013頃', org: '大学時代', title: 'プログラミングとの出会い', body: '大学生時代にプログラミング（Java）に出会い、独学でゲームなどを作っていました。' }
+    ];
+    const tlLimit = Math.max(1, this.props.timelineVisible ?? 3);
+    const tlOpen = !!(this.state && this.state.tlOpen);
+    const tlHasMore = timeline.length > tlLimit;
+    const shown = (tlOpen || !tlHasMore) ? timeline : timeline.slice(0, tlLimit);
+    const now = new Date();
+    const nowYM = [now.getFullYear(), now.getMonth() + 1];
+    const mIdx = (ym) => ym[0] * 12 + (ym[1] - 1);
+    const fmtDur = (n) => { const y = Math.floor(n / 12), m = n % 12; return ((y ? y + '年' : '') + (m ? m + 'ヶ月' : '')) || '1ヶ月'; };
+    const fmtYM = (ym) => ym[0] + '.' + String(ym[1]).padStart(2, '0');
+    const tlItems = shown.map((t, i) => {
+      const hasStart = !!t.start;
+      const months = hasStart ? (t.end ? mIdx(t.end) - mIdx(t.start) + 1 : Math.max(1, mIdx(nowYM) - mIdx(t.start))) : 0;
+      return {
+        ...t,
+        id: 'tl-' + i,
+        dotFill: t.current ? accent : '#FFFFFF',
+        tags: t.tags || [],
+        hasTags: !!(t.tags && t.tags.length),
+        hasStart,
+        endLabel: t.current ? '現在' : (t.end ? fmtYM(t.end) : t.date),
+        endColor: t.current ? accent : '#0B1A36',
+        startLabel: hasStart ? fmtYM(t.start) : '',
+        dur: hasStart ? fmtDur(months) : '',
+        lineColor: t.current ? accent : '#D3DDEE'
+      };
+    });
+    const raw = [
+      ['言語・フレームワーク', [
+        ['Ruby',5,6,9],['Ruby on Rails',5,6,9],['Javascript',8,2,6],['Shell',8,2,6],['Vue.js',7,3,6],['React',1,4,5],['Go',2,10,30],['Typescript',5,1,6],['Nuxt.js',2,7,29],['Next.js',2,4,4],['VB.NET',1,1,30],['CoffeeScript',0,6,29],['jQuery',0,6,29]
+      ]],
+      ['ライブラリ・ツール', [
+        ['GraphQL',1,3,28],['Gorm',2,10,30],['Gin',2,10,30],['Bootstrap',2,4,0],['Bulma',2,7,29],['Buefy',2,7,29]
+      ]],
+      ['インフラ・DB', [
+        ['AWS',3,0,30],['Docker',7,2,6],['GCP',2,6,28],['GKE',2,6,28],['Kubernetes',2,6,28],['Helm',2,6,28],['Terraform',4,1,29],['Vagrant',1,4,1],['MySQL',8,2,6],['SQL Server',0,10,29]
+      ]],
+      ['OS・その他ツール', [
+        ['Linux',8,2,6],['mac',7,5,7],['Windows',1,11,29],['JIRA',1,4,0],['GitLab',2,4,0],['GitHub',5,0,5],['Asana',2,6,28],['Jenkins',2,3,1],['Circle CI',2,6,28],['Slack',8,2,6],['Stripe',2,6,28],['Elasticsearch',2,4,0],['HTML,CSS/SCSS',8,2,6]
+      ]]
+    ];
+    const yrs = (s) => s[1] + s[2] / 12 + s[3] / 365;
+    const max = 8.25;
+    const groups = raw.map(([title, list]) => {
+      const arr = sort ? list.slice().sort((a, b) => yrs(b) - yrs(a)) : list;
+      return {
+        title,
+        count: arr.length,
+        items: arr.map((s) => ({
+          name: s[0],
+          label: s[1] + ' 年 ' + s[2] + ' ヶ月 ' + s[3] + ' 日',
+          pct: Math.max(2, Math.min(100, (yrs(s) / max) * 100)).toFixed(1) + '%'
+        }))
+      };
+    });
+    return {
+      tlItems,
+      tlTotal: timeline.length,
+      tlOpen: tlOpen ? 'true' : 'false',
+      tlHasMore,
+      tlShowFade: tlHasMore && !tlOpen,
+      tlLabel: tlOpen ? '閉じる' : 'すべて見る（全' + timeline.length + '件）',
+      tlChevron: tlOpen ? 'rotate(180deg)' : 'none',
+      tlToggle: () => this.setState({ tlOpen: !tlOpen }),
+      groups,
+      accent,
+      accentOnDark,
+      accentSoft: 'color-mix(in srgb, ' + accent + ' 10%, #FFFFFF)',
+      accentInk: 'color-mix(in srgb, ' + accent + ' 75%, #000000)'
+    };
+  }
+}
+</script>
+</body>
+</html>
