@@ -59,7 +59,7 @@ export function Skills({ t, categories, locale, now }: Props) {
                           </span>
                         </div>
                       </td>
-                      <td className="whitespace-nowrap border-b border-border py-3 text-right align-middle font-mono text-sm text-text-2">
+                      <td className="border-b border-border py-3 text-right align-middle font-mono text-sm text-text-2 sm:whitespace-nowrap">
                         {formatExperience(skill.days, locale)}
                       </td>
                     </tr>

@@ -19,7 +19,7 @@ function Prompt({ children }: { children: React.ReactNode }) {
 
 export function TerminalCard({ t }: Props) {
   return (
-    <div className="w-[420px] max-w-full overflow-hidden rounded-2xl border border-navy-border bg-navy shadow-[0_24px_60px_rgba(36,87,230,0.22)]">
+    <div className="w-full max-w-[420px] overflow-hidden rounded-2xl border border-navy-border bg-navy shadow-[0_24px_60px_rgba(36,87,230,0.22)]">
       <div className="flex items-center gap-2 border-b border-navy-border-2 bg-navy-2 px-[18px] py-3.5">
         <span aria-hidden="true" className="size-3 rounded-full bg-signal-red" />
         <span aria-hidden="true" className="size-3 rounded-full bg-signal-yellow" />

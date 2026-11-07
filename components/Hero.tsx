@@ -36,7 +36,7 @@ export function Hero({ t, terminal }: Props) {
           </a>
         </div>
       </div>
-      <div className="flex flex-[1_1_320px] justify-center">
+      <div className="flex min-w-0 flex-[1_1_320px] justify-center">
         <TerminalCard t={terminal} />
       </div>
     </div>
