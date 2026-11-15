@@ -1,7 +1,7 @@
 import type { Period } from "@/lib/duration";
 
 export type Skill = { name: string; experience: Period[] };
-export type SkillCategoryKey = "langs" | "frameworks" | "infra" | "tools";
+export type SkillCategoryKey = "ai" | "langs" | "frameworks" | "infra" | "tools";
 export type SkillCategory = { key: SkillCategoryKey; skills: Skill[] };
 
 const rubyPeriods: Period[] = [
@@ -17,6 +17,14 @@ const reactPeriods: Period[] = [
 ];
 
 export const skillCategories: SkillCategory[] = [
+  {
+    key: "ai",
+    skills: [
+      { name: "Claude Code", experience: [{ start: "2025-11-01", end: "current" }] },
+      { name: "Codex", experience: [{ start: "2025-11-01", end: "current" }] },
+      { name: "LLM API (Claude, GPT, Gemini via OpenRouter)", experience: [{ start: "2025-11-01", end: "current" }] },
+    ],
+  },
   {
     key: "langs",
     skills: [
@@ -83,7 +91,6 @@ export const skillCategories: SkillCategory[] = [
   {
     key: "tools",
     skills: [
-      { name: "Claude Code", experience: [{ start: "2025-11-01", end: "current" }] },
       { name: "GitHub", experience: [{ start: "2021-11-01", end: "current" }] },
       { name: "GitLab", experience: [{ start: "2019-06-01", end: "2021-10-01" }] },
       { name: "Jira", experience: [{ start: "2020-06-01", end: "2021-10-01" }] },

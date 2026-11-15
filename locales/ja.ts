@@ -71,6 +71,7 @@ const ja = {
     experience: "経験年数",
     count: (n: number) => `${n} skills`,
     categories: {
+      ai: "AI・LLM",
       langs: "言語",
       frameworks: "フレームワーク・ライブラリ",
       infra: "インフラ・DB・CI/CD",
