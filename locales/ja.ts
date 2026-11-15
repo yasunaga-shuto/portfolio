@@ -71,10 +71,10 @@ const ja = {
     experience: "経験年数",
     count: (n: number) => `${n} skills`,
     categories: {
-      langs: "言語・フレームワーク",
-      libraries: "ライブラリ・ツール",
-      infra: "インフラ・DB",
-      tools: "OS・その他ツール",
+      langs: "言語",
+      frameworks: "フレームワーク・ライブラリ",
+      infra: "インフラ・DB・CI/CD",
+      tools: "開発ツール・サービス",
     },
   },
   footer: {

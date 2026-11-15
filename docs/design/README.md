@@ -195,8 +195,8 @@ export const timeline: TimelineItem[] = [
   - 各行：スキル名（Space Grotesk 600 / 16px）の下に**経験年数バー**（高さ 6px、トラック border、塗り accent）、右に `X 年 Y ヶ月 Z 日`（mono 14px）
   - **経験年数の長い順に並べる**
   - バーの長さ = その人のスキル中**最長の経験年数を 100%**（最小 2%）
-- データは既存 `app/page.tsx` の `langs / libraries / infra / tools` をそのまま移植（`experience: {start, end|'current'}[]` の合算）
-  - カテゴリ名：言語・フレームワーク / ライブラリ・ツール / インフラ・DB / OS・その他ツール
+- データは `data/skills.ts` の `langs / frameworks / infra / tools`（`experience: {start, end|'current'}[]` の合算）
+  - カテゴリ名：言語 / フレームワーク・ライブラリ / インフラ・DB・CI/CD / 開発ツール・サービス
 
 ### 3.6 フッター
 - 背景 `navy`、左にロゴ（白 + `accent-on-dark` の `.`）、右に `ページトップへ ↑`（`#top`）
