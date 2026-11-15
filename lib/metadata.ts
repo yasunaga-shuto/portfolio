@@ -27,5 +27,7 @@ export function buildMetadata(locale: Locale): Metadata {
       title: meta.title,
       description: meta.description,
     },
+    // Search Console の所有権確認（URL プレフィックス）。消すと確認が外れるので残しておく
+    verification: { google: "MYweAczJZ2eHy2-hcxaKEkUkkkW67w3vScwXUj8z85I" },
   };
 }
