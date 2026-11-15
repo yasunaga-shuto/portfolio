@@ -6,7 +6,7 @@ import { TerminalCard } from "./TerminalCard";
 type Props = { t: Dictionary["hero"]; terminal: Dictionary["terminal"] };
 
 const button =
-  "inline-flex min-h-[52px] items-center gap-2.5 rounded-full px-6 text-[15px] font-bold no-underline";
+  "group inline-flex min-h-[52px] items-center gap-2.5 rounded-full px-6 text-[15px] font-bold no-underline transition-colors";
 
 export function Hero({ t, terminal }: Props) {
   return (
@@ -29,7 +29,7 @@ export function Hero({ t, terminal }: Props) {
         <div className="mt-1 flex flex-wrap gap-3">
           <a href="#skills" className={`${button} bg-accent text-white hover:bg-accent-ink`}>
             {t.primaryCta}
-            <ArrowDownIcon />
+            <ArrowDownIcon className="transition-transform duration-200 motion-safe:group-hover:translate-y-0.5" />
           </a>
           <a href="#about" className={`${button} border border-border-btn bg-surface text-text hover:text-accent`}>
             {t.secondaryCta}

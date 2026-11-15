@@ -49,10 +49,10 @@ export function TimelineToggle({ items, limit, showAllLabel, closeLabel }: Props
             onClick={toggle}
             aria-expanded={open}
             aria-controls="timeline-list"
-            className="inline-flex min-h-12 cursor-pointer items-center gap-2.5 rounded-full border border-border-btn bg-surface px-6 text-[15px] font-bold text-text hover:text-accent"
+            className="inline-flex min-h-12 cursor-pointer items-center gap-2.5 rounded-full border border-border-btn bg-surface px-6 text-[15px] font-bold text-text transition-colors hover:text-accent"
           >
             {open ? closeLabel : showAllLabel}
-            <ChevronDownIcon className={open ? "rotate-180" : undefined} />
+            <ChevronDownIcon className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
           </button>
         </div>
       )}
