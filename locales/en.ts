@@ -3,8 +3,11 @@ import type { Dictionary } from "./ja";
 // TODO: review（ヒーロー・自己紹介カード・タイムライン周りの英語は下書き。ユーザー確認待ち）
 const en: Dictionary = {
   meta: {
-    title: "portfolio | s.yasunaga",
-    description: "Portfolio of s.yasunaga, a full-stack engineer in Tokyo: about, career timeline and years of experience by skill.",
+    title: "Shuto Yasunaga | Freelance Full-Stack Engineer in Tokyo",
+    description:
+      "Portfolio of Shuto Yasunaga, a freelance full-stack engineer in Tokyo working mainly with Ruby on Rails, TypeScript, Next.js and AWS: backend, infrastructure and database design, plus a career timeline.",
+    name: "Shuto Yasunaga",
+    jobTitle: "Full-stack engineer",
     ogLocale: "en_US",
   },
   nav: {

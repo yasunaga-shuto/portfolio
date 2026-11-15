@@ -1,13 +1,9 @@
 import Image from "next/image";
 import photo from "@/public/image.webp";
+import { PROFILE_LINKS } from "@/lib/site";
 import type { Dictionary } from "@/locales/ja";
 
 type Props = { t: Dictionary["terminal"] };
-
-const links = [
-  { label: "wantedly", href: "https://www.wantedly.com/id/shuto_yasunaga" },
-  { label: "qiita", href: "https://qiita.com/s_yasunaga" },
-];
 
 function Prompt({ children }: { children: React.ReactNode }) {
   return (
@@ -55,7 +51,7 @@ export function TerminalCard({ t }: Props) {
         </dl>
         <Prompt>
           open{" "}
-          {links.map((link) => (
+          {PROFILE_LINKS.map((link) => (
             <span key={link.label}>
               <a
                 href={link.href}
