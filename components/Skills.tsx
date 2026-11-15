@@ -28,7 +28,7 @@ export function Skills({ t, categories, locale, now }: Props) {
           {groups.map((group) => (
             <div
               key={group.key}
-              className="mb-6 flex min-w-0 break-inside-avoid flex-col gap-5 rounded-3xl border border-border bg-surface p-6 sm:p-8"
+              className="mb-6 flex min-w-0 break-inside-avoid flex-col gap-5 rounded-3xl border border-border bg-surface p-6 sm:p-8 transition-[border-color,box-shadow,translate] duration-200 hover:border-border-btn hover:shadow-[0_12px_32px_rgba(36,87,230,0.08)] motion-safe:hover:-translate-y-0.5"
             >
               <div className="flex items-baseline justify-between gap-4">
                 <h3 className="m-0 text-xl font-bold">{t.categories[group.key]}</h3>

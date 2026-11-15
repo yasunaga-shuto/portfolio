@@ -38,7 +38,7 @@ function Entry({ item, t, locale, now }: { item: TimelineItem; t: Dictionary["ti
           </>
         )}
       </div>
-      <div className="flex min-w-0 flex-auto flex-col gap-2 rounded-[20px] border border-border bg-page-bg px-5 py-6 sm:px-7">
+      <div className="flex min-w-0 flex-auto flex-col gap-2 rounded-[20px] border border-border bg-page-bg px-5 py-6 sm:px-7 transition-[border-color,box-shadow,translate] duration-200 hover:border-border-btn hover:shadow-[0_12px_32px_rgba(36,87,230,0.08)] motion-safe:hover:-translate-y-0.5">
         <div className="flex flex-wrap items-baseline gap-x-3.5 gap-y-1">
           <p className="m-0 hidden font-mono text-sm font-medium text-accent max-sm:block">{item.dateLabel}</p>
           {/* 日付軸は装飾扱い（aria-hidden）なので、スクリーンリーダー向けに期間をテキストで持たせる */}
