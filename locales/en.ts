@@ -73,10 +73,11 @@ const en: Dictionary = {
     experience: "Years of experience",
     count: (n: number) => `${n} skills`,
     categories: {
-      langs: "Languages, Frameworks",
-      libraries: "Libraries, Tools",
-      infra: "Infrastructure, Database",
-      tools: "OS, Other Tools",
+      ai: "AI / LLM",
+      langs: "Languages",
+      frameworks: "Frameworks, Libraries",
+      infra: "Infrastructure, Database, CI/CD",
+      tools: "Dev Tools, Services",
     },
   },
   footer: {

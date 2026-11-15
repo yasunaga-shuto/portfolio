@@ -24,11 +24,11 @@ export function Skills({ t, categories, locale, now }: Props) {
             {t.legend}
           </p>
         </div>
-        <div className="flex flex-wrap items-start gap-6">
+        <div className="-mb-6 gap-6 lg:columns-2">
           {groups.map((group) => (
             <div
               key={group.key}
-              className="flex min-w-0 flex-[1_1_480px] flex-col gap-5 rounded-3xl border border-border bg-surface p-6 sm:p-8"
+              className="mb-6 flex min-w-0 break-inside-avoid flex-col gap-5 rounded-3xl border border-border bg-surface p-6 sm:p-8"
             >
               <div className="flex items-baseline justify-between gap-4">
                 <h3 className="m-0 text-xl font-bold">{t.categories[group.key]}</h3>

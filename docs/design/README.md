@@ -189,14 +189,14 @@ export const timeline: TimelineItem[] = [
 ### 3.5 スキルセット（03 — SKILLS）
 - 背景 `page-bg`、上に境界線
 - 見出しの右に凡例：短いバー + `バーの長さ = 経験年数`
-- 4 カテゴリのカード（白地・枠・角丸 24・padding 32）を 2 列（各 `flex: 1 1 480px`、狭いと 1 列）
+- 5 カテゴリのカード（白地・枠・角丸 24・padding 32）を CSS columns で 2 列の Masonry に並べる（`lg` 未満は 1 列）。カードは上から下へ列ごとに流れる
   - 見出し + 右に `N skills`
   - テーブル：`スキル` / `経験年数`
   - 各行：スキル名（Space Grotesk 600 / 16px）の下に**経験年数バー**（高さ 6px、トラック border、塗り accent）、右に `X 年 Y ヶ月 Z 日`（mono 14px）
   - **経験年数の長い順に並べる**
   - バーの長さ = その人のスキル中**最長の経験年数を 100%**（最小 2%）
-- データは既存 `app/page.tsx` の `langs / libraries / infra / tools` をそのまま移植（`experience: {start, end|'current'}[]` の合算）
-  - カテゴリ名：言語・フレームワーク / ライブラリ・ツール / インフラ・DB / OS・その他ツール
+- データは `data/skills.ts` の `ai / langs / frameworks / infra / tools`（`experience: {start, end|'current'}[]` の合算）
+  - カテゴリ名：AI・LLM / 言語 / フレームワーク・ライブラリ / インフラ・DB・CI/CD / 開発ツール・サービス
 
 ### 3.6 フッター
 - 背景 `navy`、左にロゴ（白 + `accent-on-dark` の `.`）、右に `ページトップへ ↑`（`#top`）
