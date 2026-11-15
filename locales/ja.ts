@@ -1,7 +1,10 @@
 const ja = {
   meta: {
-    title: "portfolio | s.yasunaga",
-    description: "エンジニアs.yasunagaのポートフォリオ。自己紹介・職歴タイムライン・技術の経験年数を紹介しています。",
+    title: "安永 Shuto Yasunaga | 東京のフリーランス フルスタックエンジニア",
+    description:
+      "東京のフリーランス・フルスタックエンジニア、安永（Shuto Yasunaga）のポートフォリオ。Ruby on Rails・TypeScript・Next.js・AWS を中心に、バックエンド・インフラ・DB 設計の経験と職歴タイムラインを紹介しています。",
+    name: "安永 Shuto Yasunaga",
+    jobTitle: "フルスタックエンジニア",
     ogLocale: "ja_JP",
   },
   nav: {

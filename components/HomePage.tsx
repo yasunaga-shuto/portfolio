@@ -3,6 +3,7 @@ import type { Locale } from "@/lib/duration";
 import { getDictionary, timelines } from "@/lib/i18n";
 import { About } from "./About";
 import { Hero } from "./Hero";
+import { PersonJsonLd } from "./PersonJsonLd";
 import { SiteFooter } from "./SiteFooter";
 import { SiteHeader } from "./SiteHeader";
 import { Skills } from "./Skills";
@@ -15,6 +16,7 @@ export function HomePage({ locale }: { locale: Locale }) {
 
   return (
     <>
+      <PersonJsonLd locale={locale} />
       <header className="bg-hero-bg text-text">
         <SiteHeader t={t.nav} />
         <Hero t={t.hero} terminal={t.terminal} />

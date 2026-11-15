@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import type { Locale } from "@/lib/duration";
 import { getDictionary } from "@/lib/i18n";
+import { PATHS, SITE_URL } from "@/lib/site";
 
-const SITE_URL = "https://portfolio-yasunaga-shuto.vercel.app";
-const PATHS: Record<Locale, string> = { ja: "/", en: "/en" };
-
+// og:image / twitter:image は各ルートの opengraph-image.tsx から Next.js が自動で差し込む
 export function buildMetadata(locale: Locale): Metadata {
   const { meta } = getDictionary(locale);
   return {
@@ -13,7 +12,7 @@ export function buildMetadata(locale: Locale): Metadata {
     description: meta.description,
     alternates: {
       canonical: PATHS[locale],
-      languages: { ja: PATHS.ja, en: PATHS.en },
+      languages: { ja: PATHS.ja, en: PATHS.en, "x-default": PATHS.ja },
     },
     openGraph: {
       type: "website",
@@ -22,10 +21,9 @@ export function buildMetadata(locale: Locale): Metadata {
       title: meta.title,
       description: meta.description,
       locale: meta.ogLocale,
-      images: [{ url: "/image.webp" }],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: meta.title,
       description: meta.description,
     },
