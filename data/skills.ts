@@ -27,7 +27,6 @@ export const skillCategories: SkillCategory[] = [
       { name: "HTML / CSS (SCSS)", experience: [{ start: "2018-09-01", end: "current" }] },
       { name: "Shell", experience: [{ start: "2018-09-01", end: "current" }] },
       { name: "VB.NET", experience: [{ start: "2017-06-01", end: "2018-08-01" }] },
-      { name: "CoffeeScript", experience: [{ start: "2018-09-01", end: "2019-04-01" }] },
     ],
   },
   {
@@ -41,11 +40,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "Gin", experience: [{ start: "2021-07-01", end: "2024-05-31" }] },
       { name: "GORM", experience: [{ start: "2021-07-01", end: "2024-05-31" }] },
       { name: "GraphQL", experience: [{ start: "2023-02-01", end: "2024-05-31" }] },
-      { name: "jQuery", experience: [{ start: "2018-09-01", end: "2019-04-01" }] },
       { name: "ASP.NET", experience: [{ start: "2017-06-01", end: "2018-08-01" }] },
-      { name: "Bootstrap", experience: [{ start: "2019-06-01", end: "2021-10-01" }] },
-      { name: "Bulma", experience: [{ start: "2021-10-01", end: "2024-05-31" }] },
-      { name: "Buefy", experience: [{ start: "2021-10-01", end: "2024-05-31" }] },
     ],
   },
   {
@@ -92,12 +87,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "GitHub", experience: [{ start: "2021-11-01", end: "current" }] },
       { name: "GitLab", experience: [{ start: "2019-06-01", end: "2021-10-01" }] },
       { name: "Jira", experience: [{ start: "2020-06-01", end: "2021-10-01" }] },
-      { name: "Asana", experience: [{ start: "2021-11-01", end: "2024-05-31" }] },
-      { name: "Slack", experience: [{ start: "2018-09-01", end: "current" }] },
       { name: "Stripe", experience: [{ start: "2021-11-01", end: "2024-05-31" }] },
       { name: "Linux", experience: [{ start: "2018-09-01", end: "current" }] },
-      { name: "macOS", experience: [{ start: "2019-06-01", end: "current" }] },
-      { name: "Windows", experience: [{ start: "2017-04-01", end: "2019-04-01" }] },
     ],
   },
 ];
